@@ -1,0 +1,655 @@
+*{
+    margin: 0;
+    padding: 4px;
+    box-sizing: border-box;
+}
+
+.maincontainer{
+    display: grid;
+    grid-template-columns:  repeat(3, auto) ;
+    grid-template-rows: repeat(3, 31vh);
+    grid-template-areas: " container-1 container-2 container-3 "
+                         " container-4 container-5 container-6 "
+                         " container-7 container-8 container-9 ";
+    gap: 17px;
+}
+
+.container1{
+    display: grid;
+    grid-area: container-1 ;
+    padding: .5rem;
+    background-color: #1f1e1e;
+    grid-template-rows: 7% auto ;
+    grid-template-areas: "navbar"
+                         "main1";
+    gap: 5px;
+}
+
+.container2{
+    display: grid;
+    grid-area: container-2 ;
+    padding: .3rem;
+    background-color: #1f1e1e;
+    grid-template-rows: 7% auto ;
+    grid-template-areas: "navbar"
+                         "main2";
+    gap: 5px;
+    
+}
+
+.container3{
+    display: grid;
+    grid-area: container-3 ;
+    padding: .3rem;
+    background-color: #1f1e1e;
+    grid-template-rows: 7% auto ;
+    grid-template-areas: "navbar"
+                         "main3";
+    gap: 5px;
+}
+
+.container4{
+    display: grid;
+    grid-area: container-4 ;
+    padding: .3rem;
+    background-color: #1f1e1e;
+    grid-template-rows: 7% auto ;
+    grid-template-areas: "navbar"
+                         "main4";
+    gap: 5px;
+}
+
+.container5{
+    display: grid;
+    grid-area: container-5 ;
+    padding: .3rem;
+    background-color: #1f1e1e;
+    grid-template-rows: 7% auto ;
+    grid-template-areas: "navbar"
+                         "main5";
+    gap: 5px;
+}
+
+.container6{
+    display: grid;
+    grid-area: container-6 ;
+    padding: .3rem;
+    background-color: #1f1e1e;
+    grid-template-rows: 7% auto ;
+    grid-template-areas: "navbar"
+                         "main6";
+    gap: 5px;
+    
+}
+
+.container7{
+    display: grid;
+    grid-area: container-7 ;
+    padding: .3rem;
+    background-color: #1f1e1e;
+    grid-template-rows: 7% auto ;
+    grid-template-areas: "navbar"
+                         "main7";
+    gap: 5px;
+}
+
+.container8{
+    display: grid;
+    grid-area: container-8 ;
+    padding:  .3rem;
+    background-color: #1f1e1e;
+    grid-template-rows: 7% auto ;
+    grid-template-areas: "navbar"
+                         "main8";
+    gap: 5px;
+}
+
+.container9{
+    display: grid;
+    grid-area: container-9 ;
+    padding: .3rem;
+    background-color: #1f1e1e;
+    grid-template-rows: 7% auto ;
+    grid-template-areas: "navbar"
+                         "main9";
+    gap: 5px;
+}
+
+
+
+ .navbar{
+    grid-area: navbar;
+    display: grid;
+    grid-template-columns: 2.3% 2.3% 2.3% auto;
+    /* grid-template-rows: auto; */
+    grid-template-areas: "box1 box2 box3 box4";
+    gap: 5px;
+}
+
+.box1{
+    grid-area: box1;
+    background-color: orangered;
+}
+.box2{
+    grid-area: box2;
+    background-color: yellow;
+}
+.box3{
+    grid-area: box3;
+    background-color: green;
+}
+.box4{
+    grid-area: box4;
+    background-color: white;
+}
+.container1 .main1{
+    grid-area: main1;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-areas: "box1-1 box1-2 box1-3"
+                         "box1-4 box1-5 box1-6";
+    gap: 8px;
+}
+
+.box1-1{
+    grid-area: box1-1;
+    background-color: #fc6057;
+}
+.box1-2{
+    grid-area: box1-2;
+    background-color:  #fd825c;
+}
+.box1-3{
+    grid-area: box1-3;
+    background-color: #dd9c67;
+}
+.box1-4{
+    grid-area: box1-4;
+    background-color: #01a787;
+}
+.box1-5{
+    grid-area: box1-5;
+    background-color: #1bc1a1;
+}
+.box1-6{
+    grid-area: box1-6;
+    background-color: #34daba;
+}
+
+.container2 .main2{
+    display: grid;
+    grid-template-columns: 70% auto;
+    /* grid-template-rows: 80%; */
+    grid-template-areas: "main2-1 box2-4";
+    gap: 8px;
+}
+.container2 .main2-1{
+    grid-area: main2-1;
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "box2-1"
+                        "main2-2";
+    gap: 5px;
+}
+.container2 .main2-2{
+    grid-area: main2-2;
+    display: grid;
+    grid-template-columns: 50% 48%;
+    grid-template-areas: "box2-2 box2-3";
+    gap: 10px;
+}
+.box2-1{
+    grid-area: box2-1;
+    background-color: #fc6057;
+}
+.box2-4{
+    grid-area: box2-4;
+    background-color: #dd9c67;
+}
+.box2-2{
+    grid-area: box2-2;
+    background-color: #01a787;
+}
+.box2-3{
+    grid-area: box2-3;
+    background-color: #34daba;
+}
+
+
+.container3 .main3{
+    display: grid;
+    /* grid-template-columns: ; */
+    grid-template-rows: 25% 40% 25%;
+    grid-template-areas: "box3-1"
+                        "main3-1"
+                        "box3-4";
+    gap: 8px;
+}
+.container3 .main3-1{
+    grid-area: main3-1;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-areas: "box3-2 box3-3";
+    gap: 10px;
+}
+.box3-1{
+    grid-area: box3-1;
+    background-color: #dd9c67;
+}
+.box3-2{
+    grid-area: box3-2;
+    background-color: #01a787;
+}
+.box3-3{
+    grid-area: box3-3;
+    background-color: #fc6057;
+}
+.box3-4{
+    grid-area: box3-4;
+    background-color: #34daba;
+}
+
+.container4 .main4{
+    display: grid;
+    grid-template-rows:  65% 65% 40% ;
+    grid-template-areas: "main4-1"
+                         "main4-2"
+                         "box4-5";
+    gap: 5px;
+}
+.container4 .main4-1{
+    grid-area: main4-1;
+    display: grid;
+    grid-template-columns: 50% 48%;
+    grid-template-areas: "box4-1 box4-2";
+    gap: 8px;
+}
+.container4 .main4-2{
+    grid-area: main4-2;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-areas: "box4-3 box4-4";
+    gap: 8px;
+}
+.box4-1{
+    grid-area: box4-1;
+    background-color: #fd825c;
+}
+.box4-2{
+    grid-area: box4-2;
+    background-color: #fc6057;
+   
+}
+.box4-3{
+    grid-area: box4-3;
+    background-color: #01a787;
+   
+}
+.box4-4{
+    grid-area: box4-4;
+    background-color: #1bc1a1;
+    
+}
+.box4-5{
+    grid-area: box4-5;
+    background-color: #dd9c67;
+}
+
+.container5 .main5{
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-areas: "box5-1 box5-2 box5-3 box5-4 box5-5 box5-6"
+                         "box5-7 box5-8 box5-9 box5-10 box5-11 box5-12"
+                         "box5-13 box5-14 box5-15 box5-16 box5-17 box5-18";
+    gap: 8px;
+}
+.box5-1{
+    grid-area: box5-1;
+    background-color: #01a787;
+}
+.box5-2{
+    grid-area: box5-2;
+    background-color: #fd825c;
+}
+.box5-3{
+    grid-area: box5-3;
+    background-color: #1bc1a1;
+}
+.box5-4{
+    grid-area: box5-4;
+    background-color: #fc6057;
+}
+.box5-5{
+    grid-area: box5-5;
+    background-color: #34daba;
+}
+
+.box5-6{
+    grid-area: box5-6;
+    background-color: #dd9c67;
+}
+.box5-7{
+    grid-area: box5-7;
+    background-color: #fd825c;
+}
+.box5-8{
+    grid-area: box5-8;
+    background-color: #01a787;
+}
+.box5-9{
+    grid-area: box5-9;
+    background-color: #fd825c;
+}
+.box5-10{
+    grid-area: box5-10;
+    background-color: #1bc1a1;
+}
+
+.box5-11{
+    grid-area: box5-11;
+    background-color: #dd9c67;
+}
+.box5-12{
+    grid-area: box5-12;
+    background-color: #fc6057;
+}
+.box5-13{
+    grid-area: box5-13;
+    background-color: #01a787;
+}
+.box5-14{
+    grid-area: box5-14;
+    background-color: #fc6057;
+}
+.box5-15{
+    grid-area: box5-15;
+    background-color: #34daba;
+}
+.box5-16{
+    grid-area: box5-16;
+    background-color: #dd9c67;
+}
+.box5-17{
+    grid-area: box5-17;
+    background-color: #01a787;
+}
+.box5-18{
+    grid-area: box5-18;
+    background-color: #1bc1a1;
+}
+
+.container6 .main6{
+    display: grid;
+    grid-template-rows: 20% 20% 40% 20%;
+    grid-template-areas: "main6-1"
+                         "main6-2"
+                         "main6-3"
+                         "main6-5";
+    gap: 1px;
+}
+.main6-1{
+    grid-area: main6-1;
+    display: grid;
+    grid-template-columns: 51% 25% 23%;
+    grid-template-areas: "box6-1 box6-2 box6-3";
+    gap: 5px;
+}
+.main6-2{
+    grid-area: main6-2;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-areas: "box6-4 box6-5 box6-6";
+    gap: 5px;
+}
+.main6-3{
+    grid-area: main6-3;
+    display: grid;
+    /* grid-template-columns: repeat(2,auto); */
+    grid-template-columns: 50% 51%;
+    grid-template-areas: "box6-7 main6-4";
+    gap: 3px;
+}
+.main6-4{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    /* grid-auto-rows: minmax(100px, auto); */
+}
+.main6-5{
+    grid-area: main6-5;
+    display: grid;
+    grid-template-columns: 70% auto;
+    grid-template-areas: "box6-11 box6-12";
+    gap: 3px;
+}
+
+.box6-1{
+    grid-area: box6-1;
+    background-color: #fc6057;
+
+}
+.box6-2{
+    grid-area: box6-2;
+    background-color: #01a787;
+}
+.box6-3{
+    grid-area: box6-3;
+    background-color: #dd9c67;
+}
+.box6-4{
+    grid-area: box6-4;
+    background-color: #fd825c;
+}
+.box6-5{
+    grid-area: box6-5;
+    background-color: #01a787;
+}
+.box6-6{
+    grid-area: box6-6;
+    background-color: #1bc1a1;
+}
+.box6-7{
+    grid-area: box6-7;
+    background-color: #dd9c67;
+}
+
+.box6-8{
+    /* grid-area: box6-8; */
+    grid-column: 1/2;
+    background-color: #34daba;
+}
+
+.box6-9{
+    /* grid-area: box6-9?; */
+    grid-column: 2/2;
+    background-color: #fc6057;
+}
+.box6-10{
+    /* grid-area: box6-10; */
+    grid-column: 1/2;
+    grid-row: 2;
+    background-color: #01a787;
+}
+.box6-11{
+    grid-area: box6-11;
+    background-color: #34daba;
+}.box6-12{
+    grid-area: box6-12;
+    background-color: #dd9c67;
+}
+
+.container7 .main7{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    /* grid-template-rows: 20% 80%; */
+    grid-template-areas: "main7-1 main7-2";
+    gap: 7px;
+}
+
+.main7-1{
+    grid-area: main7-1;
+    display: grid;
+    grid-template-rows: 20% 78%;
+    grid-template-areas: "box7-1"
+                         "box7-2";
+    gap: 8px;
+}
+
+.main7-2{
+    grid-area: main7-2;
+    display: grid;
+    grid-template-rows: 20% 78%;
+    grid-template-areas: "box7-3"
+                         "main7-3";
+    gap: 8px;
+}
+
+.main7-3{
+    grid-area: main7-3;
+    display: grid;
+    background-color: #038d71;
+    padding: 10px;
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas: "box7-4"
+                         "main7-4";
+    gap: 5px;
+}
+.main7-4{
+    grid-area: main7-4;
+    display:     grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+
+
+}
+
+.box7-1{
+    grid-area: box7-1;
+    background-color: #dd9c67;
+
+}
+.box7-2{
+    grid-area: box7-2;
+    background-color: #fc6057;
+}
+.box7-3{
+    grid-area: box7-3;
+    background-color: #1bc1a1;
+}
+.box7-4{
+    grid-area: box7-4;
+    background-color: #1bc1a1;
+}
+.box7-5{
+    grid-column: 1/2;
+    background-color: #14dab2;
+}
+
+.box7-6{
+    grid-column: 2/2;
+    background-color: #dd9c67;
+}
+
+.container8 .main8{
+    display: grid;
+    padding: 5px;
+    grid-template-rows: repeat(3,1fr);
+    gap: 8px;
+    grid-template-areas: "main8-1"
+                         "main8-2"
+                         "box8-9";
+}
+.main8-1{
+    grid-area: main8-1;
+    display: grid;
+    grid-template-columns: repeat(5,19.5%);
+    grid-template-areas: "box8-1 box8-2 box8-3 box8-4 box8-5";
+    gap: 5px;
+
+}
+
+.main8-2{
+    grid-area: main8-2;
+    display: grid;
+    grid-template-columns:19.5% 19.5% 60%;
+    grid-template-areas: "box8-6 box8-7 box8-8";
+    gap: 5px;
+}
+.box8-1{
+    grid-area: box8-1;
+background-color: #fc6057;
+}
+.box8-2{
+    grid-area: box8-2;
+    background-color: #dd9c67;
+}
+.box8-3{
+    grid-area: box8-3;
+    background-color: #14dab2;
+}
+.box8-4{
+    grid-area: box8-4;
+    background-color: #01a787;
+}
+.box8-5{
+    grid-area: box8-5;
+    background-color: #038d71;
+}
+.box8-6{
+    grid-area: box8-6;
+    background-color: #dd9c67;
+}
+.box8-7{
+    grid-area: box8-7;
+    background-color: #fc6057;
+}
+
+.box8-8{
+    grid-area: box8-8;
+    background-color: #fd825c;
+}
+.box8-9{
+   grid-row: 3/3;
+    background-color: #1bc1a1;
+}
+
+.container9 .main9{
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    gap: 8px;
+}
+.main9-1{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 8px;
+}
+.main9-2{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+}
+.main9-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+.box9-1{
+    grid-row: 1/2;
+    background-color: #dd9c67;
+}
+.box9-2{
+    grid-column: 1/2;
+    background-color: #038d71;
+}
+.box9-3{
+    grid-row: 1/2;
+    background-color: #14dab2;
+}
+.box9-4{
+    grid-column: 1/2;
+    background-color: #fc6057;
+}
+.box9-5{
+    grid-column: 2/2;
+    background-color: #dd9c67;
+}
